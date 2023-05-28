@@ -20,14 +20,45 @@ object Form5: TForm5
     object F1: TMenuItem
       Caption = 'FILE'
     end
-    object LATIHAN1: TMenuItem
-      Caption = 'LATIHAN'
+    object PRAKTIKUM11: TMenuItem
+      Caption = 'PRAKTIKUM 1'
+      object LATIHAN11: TMenuItem
+        Caption = 'LATIHAN 1'
+        OnClick = LATIHAN11Click
+      end
+      object LATIHAN21: TMenuItem
+        Caption = 'LATIHAN 2'
+        OnClick = LATIHAN21Click
+      end
     end
-    object DATABASE1: TMenuItem
-      Caption = 'DATABASE'
+    object PRAKTIKUM21: TMenuItem
+      Caption = 'PRAKTIKUM 2'
+      object LATIHAN12: TMenuItem
+        Caption = 'LATIHAN 1'
+        OnClick = LATIHAN12Click
+      end
+      object LATIHAN22: TMenuItem
+        Caption = 'LATIHAN 2'
+        OnClick = LATIHAN22Click
+      end
     end
-    object LAPORAN1: TMenuItem
-      Caption = 'LAPORAN'
+    object PRAKTIKUM31: TMenuItem
+      Caption = 'PRAKTIKUM 3'
+      object LATIHAN13: TMenuItem
+        Caption = 'LATIHAN 1'
+        OnClick = LATIHAN13Click
+      end
+      object LATIHAN23: TMenuItem
+        Caption = 'LATIHAN 2'
+        OnClick = LATIHAN23Click
+      end
+      object LATIHAN31: TMenuItem
+        Caption = 'LATIHAN 3'
+        OnClick = LATIHAN31Click
+      end
+    end
+    object PRAKTIKUM41: TMenuItem
+      Caption = 'PRAKTIKUM 4'
     end
   end
 end
