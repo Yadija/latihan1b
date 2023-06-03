@@ -1,8 +1,8 @@
 object Form8: TForm8
   Left = 192
-  Top = 125
+  Top = 124
   Width = 916
-  Height = 644
+  Height = 645
   Caption = 'Form Chart'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -104,8 +104,8 @@ object Form8: TForm8
   end
   object Button1: TButton
     Left = 32
-    Top = 176
-    Width = 137
+    Top = 168
+    Width = 153
     Height = 41
     Caption = 'ADD DATA'
     Font.Charset = DEFAULT_CHARSET
@@ -119,8 +119,8 @@ object Form8: TForm8
   end
   object Button2: TButton
     Left = 208
-    Top = 176
-    Width = 137
+    Top = 168
+    Width = 153
     Height = 41
     Caption = 'VIEW GRAFIK'
     Font.Charset = DEFAULT_CHARSET
@@ -138,10 +138,16 @@ object Form8: TForm8
     Width = 457
     Height = 185
     TabOrder = 5
+    RowHeights = (
+      24
+      24
+      24
+      24
+      24)
   end
   object Chart1: TChart
     Left = 32
-    Top = 264
+    Top = 288
     Width = 817
     Height = 289
     AllowPanning = pmNone
@@ -170,5 +176,35 @@ object Form8: TForm8
       PieValues.Multiplier = 1.000000000000000000
       PieValues.Order = loNone
     end
+  end
+  object Button3: TButton
+    Left = 32
+    Top = 224
+    Width = 153
+    Height = 41
+    Caption = 'CLEAR'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 7
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 208
+    Top = 224
+    Width = 153
+    Height = 41
+    Caption = 'CLEAR ALL'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 8
+    OnClick = Button4Click
   end
 end

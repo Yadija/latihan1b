@@ -19,9 +19,13 @@ type
     StringGrid1: TStringGrid;
     Chart1: TChart;
     Series1: TPieSeries;
+    Button3: TButton;
+    Button4: TButton;
     procedure FormShow(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -64,10 +68,31 @@ procedure TForm8.Button2Click(Sender: TObject);
 var
   i : Integer;
 begin
-for i := 1 to StringGrid1.RowCount - 1 do
+  Chart1.Series[0].Clear;
+
+  for i := 1 to StringGrid1.RowCount - 1 do
   begin
     Chart1.Series[0].Add(StrToFloat(StringGrid1.cells[1,i]),StringGrid1.cells[2,i]);
   end;
+end;
+
+procedure TForm8.Button3Click(Sender: TObject);
+var
+  a, b : integer;
+begin
+  a := StringGrid1.Selection.Bottom - StringGrid1.Selection.Top + 1;
+  for b := StringGrid1.Selection.Bottom + 1 to StringGrid1.RowCount - 1 do
+    StringGrid1.Rows[b - a] := StringGrid1.Rows[b];
+    StringGrid1.RowCount := StringGrid1.RowCount - 1;
+end;
+
+procedure TForm8.Button4Click(Sender: TObject);
+var
+  i : integer;
+begin
+  for i := 1 to StringGrid1.RowCount - 1 do
+    StringGrid1.Rows[i].Clear;
+    StringGrid1.RowCount := 1;
 end;
 
 end.

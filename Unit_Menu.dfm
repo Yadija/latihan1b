@@ -52,13 +52,13 @@ object Form5: TForm5
         Caption = 'LATIHAN 2'
         OnClick = LATIHAN23Click
       end
-      object LATIHAN31: TMenuItem
-        Caption = 'LATIHAN 3'
-        OnClick = LATIHAN31Click
-      end
     end
     object PRAKTIKUM41: TMenuItem
       Caption = 'PRAKTIKUM 4'
+      object LATIHAN14: TMenuItem
+        Caption = 'LATIHAN 1'
+        OnClick = LATIHAN14Click
+      end
     end
   end
 end
